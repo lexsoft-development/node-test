@@ -18,20 +18,9 @@ app.use((error, req, res, next) => {
 });
 
 app.use("/api/test", function (req, res) {
-  axios
-    .get("https://jsonplaceholder.typicode.com/posts")
-    .then((result) => {
-      res.status(200).json({
-        message: "you reached it :)",
-        result: result.data
-      });
-    })
-    .catch((error) => {
-      res.status(401).json({
-        message: "error",
-        error,
-      });
-    });
+  res.status(200).json({
+    message: "you reached it :)",
+  });
 });
 
 const server = http.createServer(app);
@@ -39,3 +28,6 @@ const server = http.createServer(app);
 server.listen(port, () => {
   console.log(`Server listens on port ${port}`);
 });
+
+
+// "https://jsonplaceholder.typicode.com/posts"
