@@ -28,8 +28,8 @@ server.listen(port, () => {
   console.log(`Server listens on port ${port}`);
 });
 
-// "https://jsonplaceholder.typicode.com/posts"
-// "https://jsonplaceholder.typicode.com/comments"
+// API 1: "https://jsonplaceholder.typicode.com/posts"
+// API 2: "https://jsonplaceholder.typicode.com/comments"
 
 // Desired result:
 
